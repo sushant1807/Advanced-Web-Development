@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>USER GROUP JOINING</title>
+</head>
+<body>
+	 <?php include('group.php'); ?>
+<form class="group" method="post" action="<?=$_SERVER['PHP_SELF']; ?>" role="form" style="border:1px solid #ccc">
+	<div class="container">
+		<h1>Join the group </h1>
+		<p>Please fill the form to join the group. </p>
+		<hr>
+		<label for="email"><b>Email</b></label>
+		<input type="text" placeholder="Enter the email" name="email" required>
+		<select name="group">
+         <option value="SE">SE</option>
+         <option value="ISM">ISM</option>
+         <option value="CS">CS</option>
+        </select>
+		
+	</div>
+	<div>
+		<input type="submit" value="join" />
+	</div>
+	
+</form>
+
+</body>
+</html>
