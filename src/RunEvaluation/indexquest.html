@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <title>CREATE QUESTION</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="quiz_app.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<br><br><br>
+<form class="form-horizontal" role="form" name="form1" onsubmit=" return hello()" action="QBModel.php" method="post">
+<div class="container">
+<div class="form-group">
+<label>QuestionID</label>
+<input type="text" class="form-control" id="questid" placeholder="Enter Question ID" style="width:35%;" name="questid" >
+</div>
+
+<br><br>
+
+<div class="form-group">
+<label>Question</label>
+<input type="text" class="form-control" id="quest" placeholder="Enter question" style="width:35%;" name="quest" >
+</div>
+
+<br><br>
+
+<div class="form-group">
+<label>Correct Answer</label>
+<input type="text" class="form-control" id="ans" placeholder="Enter correct answer" style="width:35%;" name="ans" >
+</div>
+    
+<br><br>
+
+<div class="form-group">
+<label>Theme ID</label>
+<input type="text" class="form-control" id="themeid" placeholder="Enter theme ID" style="width:25%;" name="themeid">
+</div>
+
+<br><br>
+
+<div class="form-group">
+<label>Author ID</label>
+<input type="text" class="form-control" id="authid" placeholder="Enter author id." style="width:20%;" name="authid" >
+</div>
+    
+<br><br>
+
+<br>
+
+<div class="form-group">
+<input type="submit" class="btn btn-primary" style="border:1px solid; border-color:black; margin-left:45%;" name="submit" value="SUBMIT">
+</div>
+</form>
+</body>
+</html>
