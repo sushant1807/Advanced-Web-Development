@@ -1,84 +1,86 @@
 <html lang="en">
+
 <head>
     <title>SignUp</title>
-    
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="quiz_app.css">
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
+
 <body>
-<div id = "header"><span id = "header-content"><b>LOGIN</b></span> 
-</div>
+    <div id="header"><span id="header-content"><b>Register</b></span>
+    </div>
 
-<br><br><br>
-<form class="form-horizontal" role="form" name="form1" onsubmit=" return hello()" action="PersonModel.php" method="post">
-<div class="container">
-<div class="form-group">
-<label>Name<sup style="color:red;">*</sup></label>
-<input type="text" class="form-control" id="name" placeholder="Enter Name" style="width:35%;" name="name" value="<?php echo $name ?>">
-<div style="color:red;" id="errname"></div>
-</div>
+    <br><br><br>
+    <form class="form-horizontal" role="form" name="form1" onsubmit=" return hello()" action="Register.php" method="post">
+        <div class="container">
+            <div class="form-group">
+                <input type="text" class="form-control" id="name" placeholder="Enter Name" style="width:35%;" name="name">
+                <div style="color:red;" id="errname"></div>
+            </div>
 
-<br><br>
+            <br><br>
 
-<div class="form-group">
-<label>Surname<sup style="color:red;">*</sup></label>
-<input type="text" class="form-control" id="surname" placeholder="Enter surname" style="width:35%;" name="surname" value="<?php echo $surname ?>">
-<div style="color:red;" id="errsurname"></div>
-</div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="surname" placeholder="Enter surname" style="width:35%;" name="surname">
+                <div style="color:red;" id="errsurname"></div>
+            </div>
 
-<br><br>
+            <br><br>
 
-<div class="form-group">
-<label>Username<sup style="color:red;">*</sup></label>
-<input type="text" class="form-control" id="username" placeholder="Enter your profile username" style="width:35%;" name="username">
-<div style="color:red;" id="errusername"><?php echo $error; ?></div>
-</div>
-    
-<br><br>
+            <div class="form-group">
+                <input type="text" class="form-control" id="username" placeholder="Enter your profile username" style="width:35%;" name="username">
+                <div style="color:red;" id="errusername">
+                    <?php echo $error; ?>
+                </div>
+            </div>
 
-<div class="form-group">
-<label>Password<sup style="color:red;">*</sup></label>
-<input type="password" class="form-control" id="password" placeholder="Enter password for your account" style="width:25%;" name="password">
-<div style="color:red;" id="errpassword"></div>
-</div>
+            <br><br>
 
-<br><br>
+            <div class="form-group">
+                <input type="password" class="form-control" id="password" placeholder="Enter password for your account" style="width:45%;" margin-left="45%;"
+                    name="password">
+                    <div style="color:red;" id="errpassword"></div>
+            </div>
 
-<div class="form-group">
-<label>Roll No<sup style="color:red;">*</sup></label>
-<input type="number" class="form-control" id="rollno" placeholder="Enter 4 digit roll no." style="width:20%;" name="rollno" value="<?php echo $rollno ?>">
-<div style="color:red;" id="errrollno"></div>
-</div>
-    
-<br><br>
+            <!--<br><br>
+
+            <div class="form-group">
+                <input type="number" class="form-control" id="rollno" placeholder="Enter 4 digit roll no." style="width:20%;" name="rollno"
+                    value="<?php echo $rollno ?>">
+                    <div style="color:red;" id="errrollno"></div>
+            </div>
+
+            <br><br>-->
 
 
-<div class="form-group">
-<label>Select year</label>
-<select name="year">
-<option value="F.E.">I.S.M</option>
-<option value="S.E.">S.E.</option>
-<option value="T.E.">T.E.</option>
-<option value="B.E.">B.E.</option>
+            <!--<div class="form-group">
+                <label>Select year</label>
+                <select name="year">
+<option value="S.E.">S.E=1</option>
+<option value="I.S.M">I.S.M=2</option>
+<option value="C.S">C.S=3</option>
 </select>
-</div>
+            </div>-->
 
-</div>
+        </div>
 
-<br>
+        <br>
 
-<div class="form-group">
-<input type="submit" class="btn btn-primary" style="border:1px solid; border-color:black; margin-left:45%;" name="submit" value="SIGN UP">
-<button type="reset" class="btn btn-primary" style="border:1px solid; border-color:black; margin-left:3%;">RESET</button></div>
-    <div class="form-group"><b><p class="text-muted" style="margin-left:450px; color:black; font-size:15px;"><span style="color:white">&#40;</span><span style="color:red;">&#42;</span><span style="color:white">&#41;marked fields are compulsory.</span></p></b>
-</div>
-</form>
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary" style="border:1px solid; border-color:black; margin-left:45%;" name="submit"
+                value="SIGN UP">
+                <button type="reset" class="btn btn-primary" style="border:1px solid; border-color:black; margin-left:3%;">RESET</button></div>
+        <div class="form-group"><b><p class="text-muted" style="margin-left:450px; color:black; font-size:15px;"><span style="color:white">&#40;</span><span style="color:white">&#41;marked fields are compulsory.</span></p></b>
+        </div>
+    </form>
 </body>
+
 </html>

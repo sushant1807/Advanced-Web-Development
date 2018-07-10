@@ -49,7 +49,7 @@ function do_post() {
             if ($user != null) {
                 $_SESSION["user"] = $user;
             } else {
-                $msg = "Invalid password or user unknow";
+                $msg = "Invalid password or user unknown";
             }
         }
     }
